@@ -1,0 +1,18 @@
+.footer {
+    padding: 30px 20px;
+    height: 200px;
+    flex-wrap: nowrap;
+    /* justify-content: flex-end; */
+}
+.about {
+    height: 80px;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin-bottom: auto;
+    padding: 10px;
+}
