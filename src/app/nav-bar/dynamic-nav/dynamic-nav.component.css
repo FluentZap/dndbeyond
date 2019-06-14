@@ -1,0 +1,45 @@
+.dynamic-nav {
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    z-index: 10;
+    left: 0;
+    padding: 15px 10px;
+    box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, .8);
+}
+
+.dn-container {
+    width: 900px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dn-grid-group {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    height: 100%;
+}
+
+.dn-grid-cards {
+  grid-column-end: span 8;
+  grid-row-end: span 12;
+}
+
+.dn-button {
+    grid-column-end: span 4;
+    grid-row-end: span 6;
+    background-image: url('../../../assets/menu/characters.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.dn-button-lg {
+  grid-column-end: span 4;
+  grid-row-end: span 12;
+  background-image: url('../../../assets/menu/characters.jpg');
+}

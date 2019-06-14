@@ -13,8 +13,12 @@
     }
 }
 
-.dropdown:hover>.dropdown-menu {
+/* ::shadow .dropdown:hover>.dropdown-menu {
   display: block;
+} */
+
+::shadow .dropdown:hover>.dynamic-nav {
+  display: none;
 }
 
 .navbar {

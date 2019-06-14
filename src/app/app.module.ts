@@ -10,6 +10,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CharactersComponent } from './characters/characters.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FooterComponent } from './footer/footer.component';
+import { DynamicNavComponent } from './nav-bar/dynamic-nav/dynamic-nav.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     NavBarComponent,
     CharactersComponent,
     WelcomeComponent,
-    FooterComponent
+    FooterComponent,
+    DynamicNavComponent
   ],
   imports: [
     BrowserModule,
