@@ -1,0 +1,6 @@
+.logo {
+    background-image: url("../../assets/dnd-beyond-logo.svg");    
+    background-repeat: no-repeat;
+    width: 10rem;
+    height: 3rem;
+}
