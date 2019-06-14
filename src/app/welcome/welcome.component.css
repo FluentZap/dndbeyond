@@ -1,0 +1,13 @@
+.home-content {    
+    background-image: url('../../assets/fighterhero.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 550px;
+}
+
+body {
+  background-image: url('../../assets/background_texture.png');  
+  /* background-position-x: center; */
+  height: 100vw;
+  width: 100vw;
+}

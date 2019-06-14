@@ -4,3 +4,23 @@
     width: 10rem;
     height: 3rem;
 }
+
+@media only screen and (max-width: 996px) {
+
+    .logo {
+        width: 8rem;
+        height: 2rem;
+    }
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.navbar {
+    margin: 0 auto;    
+}
+
+.bannerMenu {
+    border-bottom: 1px solid #47d18c
+}
