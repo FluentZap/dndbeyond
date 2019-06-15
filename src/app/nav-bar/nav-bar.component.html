@@ -11,7 +11,7 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       
-      <li class="nav-item dropdown">
+      <li (mouseenter)="triggerMenu('creations')" (mouseleave)="triggerMenu(null)" class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Creations
         </a>
@@ -24,4 +24,4 @@
   </div>
 </nav>
 
-<app-dynamic-nav></app-dynamic-nav>
+<app-dynamic-nav [openMenu]="openMenu"></app-dynamic-nav>

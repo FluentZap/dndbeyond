@@ -22,9 +22,28 @@
 }
 
 .navbar {
-    margin: 0 auto;    
+    margin: 0 auto;
+    padding-bottom: 0;
+    padding-top: 0;
+    height: 50px;
+}
+
+.navbar-collapse {
+    height: 100%;
 }
 
 .bannerMenu {
-    border-bottom: 1px solid #47d18c
+    border-bottom: 1px solid #47d18c;
+    height: 70px;
+}
+
+ul {
+    height: 100%;
+
+}
+
+li a {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }

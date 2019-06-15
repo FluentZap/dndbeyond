@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-dynamic-nav',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dynamic-nav.component.css']
 })
 export class DynamicNavComponent implements OnInit {
+  @Input() openMenu: string;
 
   constructor() { }
 
-  ngOnInit() {
+  //hoverOn: boolean = true;
+  ngOnInit() {    
   }
 
 }
