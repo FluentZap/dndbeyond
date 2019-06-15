@@ -1,13 +1,25 @@
-<div class="bg-primary dynamic-nav" *ngIf="openMenu==='creations' || hoverOn" ng-mouseleave="hoverOn=true">
+<div class="bg-primary dynamic-nav" *ngIf="openMenu">
   <div class="dn-container">
-    <div class="dn-grid-group">
+    <div *ngIf="openMenu==='Creations'" class="dn-grid-group">
       <div class="dn-grid-group dn-grid-cards">
-        <div class="dn-button rounded"></div>
-        <div class="dn-button rounded"></div>
-        <div class="dn-button-lg rounded"></div>
-        <div class="dn-button rounded"></div>
-        <div class="dn-button rounded"></div>
+        <a href="" class="dn-button rounded"> <img src="../../../assets/menu/characters.jpg"></a>
+        <a href="" class="dn-button rounded"> <img src="../../../assets/menu/campaigns.jpg"></a>
+        <a href="" class="dn-button-lg rounded"> <img src="../../../assets/menu/encounters.jpg"></a>
+        <a href="" class="dn-button rounded"> <img src="../../../assets/menu/homebrew.jpg"></a>
+        <a href="" class="dn-button rounded"> <img src="../../../assets/menu/creations.jpg"></a>
       </div>
     </div>
+
+    <div *ngIf="openMenu==='Tools'" class="dn-grid-group">
+        <a href="" class="dn-button-full rounded"> <img src="../../../assets/menu/characters.jpg"></a>
+        <a href="" class="dn-button-full rounded"> <img src="../../../assets/menu/campaigns.jpg"></a>
+        <a href="" class="dn-button-full rounded"> <img src="../../../assets/menu/campaigns.jpg"></a>        
+    </div>
+
+    <div *ngIf="openMenu==='Marketplace'" class="dn-grid-group">
+      <a href="" class="dn-button-full rounded"> <img src="../../../assets/menu/characters.jpg"></a>
+      <a href="" class="dn-button-full rounded"> <img src="../../../assets/menu/campaigns.jpg"></a>      
+    </div>
+
   </div>
 </div>

@@ -2,26 +2,25 @@
   <a class="navbar-brand logo" href=""></a>
 </nav>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">  
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
-      
-      <li (mouseenter)="triggerMenu('creations')" (mouseleave)="triggerMenu(null)" class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Creations
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>          
-        </div>
-      </li>
 
+      <li *ngFor="let menu of menus" class="nav-item dropdown" (mouseover)="onCategory(menu)"
+        (mouseout)="onCategory(null)">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          {{menu}}
+        </a>
+      </li>
+      
     </ul>
   </div>
 </nav>
 
-<app-dynamic-nav (mouseenter)="triggerMenu('creations')" (mouseleave)="triggerMenu(null)" [openMenu]="openMenu"></app-dynamic-nav>
+<app-dynamic-nav (mouseover)="onMenu(true)" (mouseout)="onMenu(false)" [openMenu]="openMenu"></app-dynamic-nav>
+
