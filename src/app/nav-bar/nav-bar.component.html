@@ -24,4 +24,4 @@
   </div>
 </nav>
 
-<app-dynamic-nav [openMenu]="openMenu"></app-dynamic-nav>
+<app-dynamic-nav (mouseenter)="triggerMenu('creations')" (mouseleave)="triggerMenu(null)" [openMenu]="openMenu"></app-dynamic-nav>

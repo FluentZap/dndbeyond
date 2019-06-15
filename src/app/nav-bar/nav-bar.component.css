@@ -17,9 +17,9 @@
   display: block;
 } */
 
-::shadow .dropdown:hover>.dynamic-nav {
+/* ::shadow .dropdown:hover>.dynamic-nav {
   display: none;
-}
+} */
 
 .navbar {
     margin: 0 auto;
