@@ -1,17 +1,54 @@
-.home-content {    
+.home-content {
     background-image: url('../../assets/fighterhero.jpg');
     background-repeat: no-repeat;
     background-position-x: center;
-    height: 550px;
-    padding-top: 96px;
+    height: 550px;    
 }
 
+/* * {
+  border: 1px red solid;
+} */
+
+.article-layout {
+  padding-top: 96px;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr 1fr auto;
+  grid-template-rows: 450px 400px 300px;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  /* align-items: end; */
+}
+
+.featured-article {
+  grid-column: 2 / 5;
+  grid-row: 1 / span 1;
+  margin-bottom: 50px;
+  align-self: end;
+}
+
+.top-articles {
+  grid-column-end: span 4;
+  grid-row-end: span 1;
+  background-color: #fff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);  
+}
+    
+
 body {
-  background-image: url('../../assets/background_texture.png');  
+  /* background-image:  */
+  background: #f9f9f9 url('../../assets/background_texture.png');
   background-position-x: center;  
   height: 100vh;
   width: 100vw;  
   max-width: 100%;
+}
+
+.featured-video {
+  grid-column: 5 / 8;
+  grid-row: 1 / span 1;    
 }
 
 iframe {  
@@ -22,6 +59,7 @@ iframe {
   /* top: 50%; */
   /* transform: translate(0, -50%); */
   /* margin-top: -15px; */
-  margin-right: 10vw;
+  /* margin-right: 10vw; */  
   float: right;
+  margin-top: 96px;
 }
