@@ -8,11 +8,22 @@ import { FiredataService } from '../services/firedata.service';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent implements OnInit {
-  articles = [];
+  featuredArticle = {};
+  topArticles = [];
+  pastArticles = [];
   
   constructor(private firedata: FiredataService) {
     firedata.getArticles().subscribe(items => {
-      this.articles = items;
+      if (items && items.length > 0) {                
+        items.sort( (a, b) => {
+          return b['posted']['seconds'] - a['posted']['seconds'];
+        });        
+        console.log(items);
+        
+        this.featuredArticle = items[0];
+        this.topArticles = items.slice(1, 3);
+        this.pastArticles = items.slice(3, 9);
+      }
     });
    }
 
