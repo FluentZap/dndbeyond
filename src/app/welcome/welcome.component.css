@@ -51,7 +51,7 @@
   height: 200px;
   width: 100%;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: center;
   background-size: cover;
   background-color: black;
 }
@@ -68,7 +68,7 @@
   height: 140px;
   width: 100%;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: center;
   background-size: cover;
   background-color: black;
 }
@@ -94,4 +94,34 @@ iframe {
   /* margin-right: 10vw; */  
   float: right;
   margin-top: 96px;
+}
+
+
+
+@media (max-width: 796px) {
+  .featured-video {
+    display: none;
+  }
+
+ .article-layout {      
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 200px 300px 300px repeat(4, 200px);
+   grid-column-gap: 15px;
+   grid-row-gap: 15px;
+   margin-left: 10px;
+   margin-right: 10px;
+ }
+
+.featured-article,
+.top-articles,
+.past-articles {
+  grid-column: span 2;
+ }
+ .top-articles a {
+   height: 100px;
+ }
+
+ .past-articles a {   
+   height: 100px;
+ }
 }
