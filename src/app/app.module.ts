@@ -12,6 +12,10 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { FooterComponent } from './footer/footer.component';
 import { DynamicNavComponent } from './nav-bar/dynamic-nav/dynamic-nav.component';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { firebaseConfig } from 'src/api_keys';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +28,10 @@ import { DynamicNavComponent } from './nav-bar/dynamic-nav/dynamic-nav.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(firebaseConfig), 
+    AngularFirestoreModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
