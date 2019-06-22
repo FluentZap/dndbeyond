@@ -11,7 +11,7 @@ This project requires NPM, Angular, node version 10+, and Firestore to run.
 You will need a firebase database to serve the content to the website. To install create a file called api_keys.ts and export your API keys as using the variable name "firebaseConfig".
 
 The database entries are formated as
-```json
+```JSON
 {
     //under collection "articles"
     "212-name-of-dynamic-url" :
