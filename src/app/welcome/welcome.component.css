@@ -2,7 +2,7 @@
     background-image: url('../../assets/fighterhero.jpg');
     background-repeat: no-repeat;
     background-position-x: center;
-    height: 550px;    
+    /* height: 550px;     */
 }
 
 
@@ -10,12 +10,13 @@
   padding-top: 96px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 450px 400px 300px 300px 300px;
+  grid-template-rows: 450px 400px 300px 300px;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 50px;
   /* align-items: end; */  
 }
 
@@ -92,13 +93,13 @@
   background-color: black;
 }
 
-body {
+main {
   /* background-image:  */
   background: #f9f9f9 url('../../assets/background_texture.png');
   background-position-x: center;  
-  height: 3000px;
-  width: 100vw;  
+  width: 100vw;
   max-width: 100%;  
+  /* overflow-x: hidden; */
 }
 
 

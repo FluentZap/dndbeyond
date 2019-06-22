@@ -1,14 +1,14 @@
-<body>
+<main>
   <div class="home-content">
     <div class="article-layout">
 
 
       <div class="featured-article mb-3">
-        <a [ngStyle]="{'background-image': 'url(' + featuredArticle.coverimage + ')'}"></a>
+        <a [ngStyle]="{'background-image': 'url(' + featuredArticle['coverimage'] + ')'}"></a>
 
         <div class="card-body">
-          <h3 class="card-title">{{featuredArticle.title}}</h3>
-          <p class="card-text">{{featuredArticle.article}}</p>          
+          <h3 class="card-title">{{featuredArticle['title']}}</h3>
+          <p class="card-text">{{featuredArticle['article']}}</p>
         </div>
 
       </div>
@@ -18,7 +18,7 @@
       </div>
 
       <div *ngFor="let article of topArticles" class="mb-3 top-articles">
-        <a [ngStyle]="{'background-image': 'url(' + article.coverimage + ')'}"></a>
+        <a [ngStyle]="{'background-image': 'url(' + article['coverimage'] + ')'}"></a>
         <div class="card-body">
           <h3 class="card-title">{{article.title}}</h3>
           <p class="card-text">{{article.article}}</p>
@@ -26,7 +26,7 @@
       </div>
 
       <div *ngFor="let article of pastArticles" class="mb-3 past-articles">
-        <a [ngStyle]="{'background-image': 'url(' + article.coverimage + ')'}"></a>
+        <a [ngStyle]="{'background-image': 'url(' + article['coverimage'] + ')'}"></a>
         <div class="card-body">
           <h3 class="card-title">{{article.title}}</h3>
         </div>
@@ -34,4 +34,4 @@
 
     </div>
   </div>
-</body>
+</main>
