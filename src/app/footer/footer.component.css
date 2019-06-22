@@ -1,8 +1,9 @@
 .footer {
-    padding: 30px 20px;
+    padding: 30px 50px;
     height: 200px;
-    flex-wrap: nowrap;
-    /* justify-content: flex-end; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .about {
     height: 80px;
@@ -10,13 +11,27 @@
 
 li {
     list-style: none;
+    font-size: 12px;
 }
 
 ul {
+    justify-self: end;
     margin-bottom: auto;
     padding: 10px;
 }
 
 a:hover {
     text-decoration: none;
+}
+
+.beyond-logo {
+    width: 200px;
+    margin-right: auto;
+}
+
+
+@media (max-width: 796px) {
+    .beyond-logo {
+        display: none;
+    }
 }
