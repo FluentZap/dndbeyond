@@ -11,20 +11,18 @@ This project requires NPM, Angular, node version 10+, and Firestore to run.
 You will need a firebase database to serve the content to the website. To install create a file called api_keys.ts and export your API keys as using the variable name "firebaseConfig".
 
 The database entries are formated as
-```JSON
-{
-    //under collection "articles"
+<pre lang="json">
+{    
     "212-name-of-dynamic-url" :
     {
         "article" : "Article heading that will be displayed on the main page",
         "author" : "Authors Name",
         "coverimage" : "../../assets/articles/imagefile.png",
-        "posted": "June 10, 2019 at 12:00:00 AM UTC-7", //timestamp data type
+        "posted": "June 10, 2019 at 12:00:00 AM UTC-7",
         "title" : "Heading to be displayed over article"
     }
 }
-
-```
+</pre>
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/` to view the site.
 
