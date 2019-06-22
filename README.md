@@ -4,6 +4,8 @@ This project is made with [Angular CLI](https://github.com/angular/angular-cli) 
 
 This is an angular recreation of the site [D&D Beyond](https://www.dndbeyond.com/)
 
+The site is currently hosted on https://www.fastfattoad.com/
+
 ## Installation
 
 This project requires NPM, Angular, node version 10+, and Firestore to run.
