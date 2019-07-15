@@ -34,6 +34,10 @@ Completed components for Nav bar and Footer
 Navbar menus open and close
 Working youtube frame
 
+## Known Bugs
+* Menu does not stay open when moving off of the menu item.
+* Hamburger menu has no background.
+
 ## Todo list
 
 - [x] Responsive design for width breakpoint
